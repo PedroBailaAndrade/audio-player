@@ -29,3 +29,5 @@ Audio player UI challenge.
 ### Usage
 
     npm run dev
+
+This project is deployed and live, using Vercel, at [Audio Player Challenge](https://audio-player-two-lemon.vercel.app/).

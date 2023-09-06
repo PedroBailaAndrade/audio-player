@@ -17,10 +17,20 @@
 		}
 	};
 
+	let previousAudioIndex = -1;
+
 	const shuffle = () => {
 		const max = $audioData.length - 1;
 		const min = 0;
-		$audioIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+		let newAudioIndex;
+
+		do {
+			newAudioIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+		} while (newAudioIndex === previousAudioIndex);
+
+		previousAudioIndex = newAudioIndex;
+
+		$audioIndex = newAudioIndex;
 	};
 
 	$: if ($audioEnded) {

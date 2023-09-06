@@ -10,6 +10,10 @@
 
 <style>
 	.audio-card {
+		background-color: #fcfcfc;
+		border: 1px solid #e8e8e8;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
 		display: grid;
 		gap: 16px;
 		grid-template-columns: 140px 412px;

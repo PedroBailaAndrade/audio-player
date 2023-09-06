@@ -11,6 +11,7 @@
 
 <div class="audio-progress-bar">
 	<div class="audio-wave">
+		<div class="grey" />
 		<div class="black" style="--elapsed-time-percentage: {elapsedPercentage}%" />
 		<img class="waves" src="/progress-bar.svg" alt="progress bar" />
 		<input
@@ -51,12 +52,19 @@
 		position: relative;
 	}
 
+	.grey,
 	.black,
 	.waves,
 	input[type='range'] {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+
+	.grey {
+		height: 48px;
+		width: 100%;
+		background-color: #dbdbdb;
 	}
 
 	.black {

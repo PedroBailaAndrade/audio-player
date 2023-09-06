@@ -20,7 +20,11 @@
 	.audio-volume {
 		align-items: center;
 		background-color: #f8f8f8;
-		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		border-bottom-right-radius: 16px;
+		border-bottom-left-radius: 16px;
+		border-left: 1px solid #e8e8e8;
+		border-right: 1px solid #e8e8e8;
 		display: grid;
 		gap: 12px;
 		grid-template-rows: 16px;

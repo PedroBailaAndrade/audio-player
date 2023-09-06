@@ -1,6 +1,10 @@
+<script>
+	import { audioIndex, audioData } from '../lib/audioStore';
+</script>
+
 <div class="audio-text">
-	<p class="audio-title">A garagem da vizinha</p>
-	<p class="artist-name">Quim Barreiros</p>
+	<p class="audio-title">{$audioData[$audioIndex].title}</p>
+	<p class="artist-name">{$audioData[$audioIndex].artist}</p>
 </div>
 
 <style>
@@ -17,7 +21,6 @@
 		line-height: 20px;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		text-transform: uppercase;
 		white-space: nowrap;
 	}
 

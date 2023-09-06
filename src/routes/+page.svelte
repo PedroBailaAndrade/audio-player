@@ -1,9 +1,11 @@
 <script>
+	import AudioPlayer from '../components/AudioPlayer.svelte';
 	import AudioPlayerCard from '../components/AudioPlayerCard.svelte';
 </script>
 
 <section>
 	<AudioPlayerCard />
+	<AudioPlayer />
 </section>
 
 <style>

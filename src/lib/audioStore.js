@@ -29,7 +29,7 @@ export const audioIsPaused = writable(true);
 export const audioIsRepeat = writable(false);
 export const audioCurrentTime = writable(0);
 export const audioDuration = writable(0);
-export const audioVolume = writable(0.65);
+export const audioVolume = writable(0.2);
 export const audioFile = writable('');
 export const audioEnded = writable(false);
 
@@ -41,6 +41,10 @@ export const formatTime = (time) => {
 
 	const minutes = Math.floor(newTime / 60);
 	const seconds = Math.floor(newTime % 60);
+
+	if (minutes < 0) {
+		return '0:00';
+	}
 
 	return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
 };

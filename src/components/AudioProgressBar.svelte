@@ -4,6 +4,9 @@
 	let elapsedPercentage;
 	const getElapsedPercentage = (current, duration) => {
 		elapsedPercentage = (current / duration) * 100;
+		if (elapsedPercentage > 99.5) {
+			elapsedPercentage = 99.5;
+		}
 	};
 
 	$: $audioCurrentTime, getElapsedPercentage($audioCurrentTime, $audioData[$audioIndex].duration);

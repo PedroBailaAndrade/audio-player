@@ -11,19 +11,19 @@
 <style>
 	@font-face {
 		font-family: SFPro;
-		src: url(./sf-pro-text-regular.woff);
+		src: url('/fonts/sf-pro-text-regular.woff');
 		font-weight: 400;
 	}
 
 	@font-face {
 		font-family: SFPro;
-		src: url(./sf-pro-text-medium.woff);
+		src: url('/fonts/sf-pro-text-medium.woff');
 		font-weight: 500;
 	}
 
 	@font-face {
 		font-family: SFPro;
-		src: url(./sf-pro-text-bold.woff);
+		src: url('/fonts/sf-pro-text-bold.woff');
 		font-weight: 700;
 	}
 
